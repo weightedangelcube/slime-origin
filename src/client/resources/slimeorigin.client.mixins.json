@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "dev.angelcube.mixin",
+	"package": "dev.angelcube.mixin.client",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
+	"client": [
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
