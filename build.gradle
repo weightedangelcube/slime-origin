@@ -11,6 +11,11 @@ base {
 }
 
 repositories {
+
+    maven {
+        url 'jitpack.io'
+    }
+
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -31,7 +36,11 @@ loom {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
+
+    // To change the versions see the gradle.properties file
+
+    modImplementation "com.github.apace100:apoli:{apoli_version}"
+	
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
