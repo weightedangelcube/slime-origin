@@ -12,9 +12,44 @@ base {
 
 repositories {
 
+    // Modrinth API
+    exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+
+    // Quilt!
     maven {
-        url 'jitpack.io'
+        url 'https://maven.quiltmc.org/repository/release'
     }
+
+    // Ladysnake Stable
+    maven {
+        url 'https://maven.ladysnake.org/releases'
+    }
+
+    // Ladysnake: where Apoli lives
+    maven {
+        url 'https://maven.ladysnake.org/snapshots'
+    }
+
+    // Gradle complained, so I added this
+    maven {
+		url "https://maven.shedaniel.me/"
+	}
+
+    // And this
+    maven {
+		url "https://maven.terraformersmc.com/"
+	}
 
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -39,7 +74,7 @@ dependencies {
 
     // To change the versions see the gradle.properties file
 
-    modImplementation "com.github.apace100:apoli:{apoli_version}"
+    modImplementation "io.github.apace100:apoli:${apoli_version}"
 	
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
