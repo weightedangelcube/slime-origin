@@ -8,18 +8,18 @@
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://angelcube.dev/",
+		"sources": "https://github.com/weightedangelcube/slime-origin"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0",
 	"icon": "assets/slimeorigin/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.angelcube.Slimeorigin"
+			"dev.angelcube.slimeorigin.Slimeorigin"
 		],
 		"client": [
-			"dev.angelcube.SlimeoriginClient"
+			"dev.angelcube.slimeorigin.SlimeoriginClient"
 		]
 	},
 	"mixins": [
@@ -31,9 +31,10 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.4-",
+		"minecraft": "~1.21.1-",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+        "apoli": ">2.12.0"
 	},
 	"suggests": {
 		"another-mod": "*"
