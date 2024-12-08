@@ -1,0 +1,5 @@
+{
+	"type" : "origins:simple",
+	"name": "Bounciness",
+	"description": "You bounce on any block as if it were a Slime Block."
+  }

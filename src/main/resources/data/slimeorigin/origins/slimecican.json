@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"slimeorigin:bounciness"
+	],
+	"icon": {
+		"id": "minecraft:slime_ball"
+	},
+	"order": 100,
+	"impact": 2,
+	"name": "Slimecican",
+	"description": "Part Human, Part Slime. Very unpleasant to touch."
+}

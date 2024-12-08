@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"enabled": true,
+	"origins": [
+	  "slimeorigin:slimecican"
+	],
+	"hidden": false
+  }

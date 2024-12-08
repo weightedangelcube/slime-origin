@@ -3,9 +3,9 @@
 	"id": "slimeorigin",
 	"version": "${version}",
 	"name": "slimeorigin",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds a Slime origin to the Origins mod!",
 	"authors": [
-		"Me!"
+		"Angel Wang (angelcube)"
 	],
 	"contact": {
 		"homepage": "https://angelcube.dev/",
@@ -23,18 +23,14 @@
 		]
 	},
 	"mixins": [
-		"slimeorigin.mixins.json",
-		{
-			"config": "slimeorigin.client.mixins.json",
-			"environment": "client"
-		}
+		"slimeorigin.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.1-",
+		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*",
-        "apoli": ">2.12.0"
+        "origins": ">=1.13.0-alpha.10+mc.1.21.x"
 	},
 	"suggests": {
 		"another-mod": "*"

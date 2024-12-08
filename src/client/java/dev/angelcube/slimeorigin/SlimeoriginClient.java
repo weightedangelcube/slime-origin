@@ -1,4 +1,4 @@
-package dev.angelcube.slimeorigin.client;
+package dev.angelcube.slimeorigin;
 
 import net.fabricmc.api.ClientModInitializer;
 
