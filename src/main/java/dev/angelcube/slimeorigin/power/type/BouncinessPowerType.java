@@ -1,24 +1,17 @@
 package dev.angelcube.slimeorigin.power.type;
 
-import io.github.apace100.apoli.power.type.PowerType;
 import io.github.apace100.apoli.condition.EntityCondition;
 import io.github.apace100.apoli.power.PowerConfiguration;
-
-import org.jetbrains.annotations.NotNull;
+import io.github.apace100.apoli.power.type.PowerType;
 
 import java.util.Optional;
 
-/**
- * This power allows an entity to bounce on all blocks as if they were slime blocks.
- * 
- * See also BlockMixin.
- **/
 public class BouncinessPowerType extends PowerType {
     /**
-     * Constructs a new instance of the bounciness power.
-     *
-     * @param condition
-     **/
+     * Constructs a new instance of the Bounciness PowerType.
+     * 
+     * @param condition Optional condition to pass to the superclass
+     */
     public BouncinessPowerType(Optional<EntityCondition> condition) {
         super(condition);
     }
@@ -26,10 +19,10 @@ public class BouncinessPowerType extends PowerType {
     /**
      * Retrieves the PowerConfiguration of BOUNCINESS defined in PowerTypes.
      *
-     * @return The BOUNCINESS PowerConfiguration.
-     **/
+     * @return The BOUNCINESS PowerConfiguration
+     */
     @Override
-    public @NotNull PowerConfiguration<?> getConfig() {
-        return PowerTypes.BOUNCINESS;
+    public PowerConfiguration<?> getConfig() {
+        return SlimePowerTypes.BOUNCINESS;
     }
 }

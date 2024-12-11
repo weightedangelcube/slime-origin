@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "dev.angelcube.slimeorigin.mixin",
+	"package": "dev.angelcube.slimeorigin.mixin.client",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"BlockMixin"
+	"client": [
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

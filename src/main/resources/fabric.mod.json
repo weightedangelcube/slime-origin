@@ -3,15 +3,15 @@
 	"id": "slimeorigin",
 	"version": "${version}",
 	"name": "slimeorigin",
-	"description": "Adds a Slime origin to the Origins mod!",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Angel Wang (angelcube)"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://angelcube.dev/",
-		"sources": "https://github.com/weightedangelcube/slime-origin"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "GPL-3.0",
+	"license": "CC0-1.0",
 	"icon": "assets/slimeorigin/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -23,14 +23,17 @@
 		]
 	},
 	"mixins": [
-		"slimeorigin.mixins.json"
+		"slimeorigin.mixins.json",
+		{
+			"config": "slimeorigin.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*",
-        "origins": ">=1.13.0-alpha.10+mc.1.21.x"
+		"fabric-api": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

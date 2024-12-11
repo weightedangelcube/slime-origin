@@ -11,8 +11,12 @@ base {
 }
 
 repositories {
+	mavenLocal()
+	mavenCentral()
 
-    // Modrinth API
+	// Where we get our deps!
+
+	// Modrinth API
     exclusiveContent {
 		forRepository {
 			maven {
@@ -41,26 +45,25 @@ repositories {
         url 'https://maven.ladysnake.org/snapshots'
     }
 
-    // Gradle complained, so I added this
+    // Cloth config
     maven {
 		url "https://maven.shedaniel.me/"
 	}
 
-    // And this
+    // Mod menu
     maven {
 		url "https://maven.terraformersmc.com/"
 	}
 
-	// And this 
+	// Carpet!
 	maven {
-		url "https://masa.dy.fi/maven"
+	 	url "https://masa.dy.fi/maven"
 	}
 
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+    // Backup, in case some things don't want to exist
+    maven {
+        url "https://jitpack.io/"
+    }
 }
 
 loom {
@@ -76,13 +79,16 @@ loom {
 }
 
 dependencies {
+	// To change the versions see the gradle.properties file
 
-    // To change the versions see the gradle.properties file
-
+	// Origins
 	modImplementation "io.github.apace100:origins-fabric:${origins_version}"
 
+	// Minecraft and its mappings
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
+	// Fabric Loader
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
