@@ -8,13 +8,19 @@ import io.github.apace100.apoli.registry.ApoliRegistries;
 
 import net.minecraft.registry.Registry;
 
-// register all powertypes
+/**
+ * This class registers all the PowerTypes we have to Apoli's registry.
+ */
 public class SlimePowerTypes {
     /**
-     * Creates a new PowerConfiguration BOUNCINESS and registers it to Apoli's registry.
+     * Creates new PowerConfigurations BOUNCINESS and FRAGMENTATION, and registers them to Apoli's
+     * registry.
      */
     public static final PowerConfiguration<BouncinessPowerType> BOUNCINESS = register(
-        PowerConfiguration.conditionedSimple(Slimeorigin.identifier("bounciness"), BouncinessPowerType::new)
+        PowerConfiguration.dataFactory(Slimeorigin.identifier("bounciness"), BouncinessPowerType.DATA_FACTORY)
+    );
+    public static final PowerConfiguration<FragmentationPowerType> FRAGMENTATION = register(
+        PowerConfiguration.conditionedSimple(Slimeorigin.identifier("fragmentation"), FragmentationPowerType::new)
     );
 
     /**

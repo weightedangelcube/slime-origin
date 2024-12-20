@@ -23,6 +23,7 @@ import org.spongepowered.asm.mixin.Mixin;
  */
 @Mixin(Block.class)
 public class BlockMixin {
+    double bounceMultiplier;
     /**
      * Modifies all blocks to be bouncy such as the Slime block. 
      * If the PowerType BOUNCINESS is active, and the entity in question does not bypass landing effects,
@@ -36,17 +37,17 @@ public class BlockMixin {
      */
     @Inject(method = "onEntityLand", at = @At("HEAD"), cancellable = true)
     public void onEntityLand(BlockView world, Entity entity, CallbackInfo ci) {
+        for (BouncinessPowerType bouncePower : PowerHolderComponent.getPowerTypes(entity, BouncinessPowerType.class)) {
+            bounceMultiplier = bouncePower.getBounceMultiplier();
+        }
+
         if (!entity.bypassesLandingEffects() && PowerHolderComponent.hasPowerType(entity, BouncinessPowerType.class)) {
             Vec3d entityVelocity = entity.getVelocity();
             if (entityVelocity.y < -0.1) {
-                double bounceMultiplier;
-                if (entity instanceof LivingEntity) {
-                    bounceMultiplier = 1.0D;
-                } else {
+                if (!(entity instanceof LivingEntity)) {
                     bounceMultiplier = 0.8D;
                 }
                 entity.setVelocity(entityVelocity.x, -entityVelocity.y * bounceMultiplier, entityVelocity.z);
-
                 BlockSoundGroup slimeSounds = BlockSoundGroup.SLIME;
                 entity.playSound(slimeSounds.getStepSound(), slimeSounds.getVolume() * 0.1F, slimeSounds.getPitch());
             } else {

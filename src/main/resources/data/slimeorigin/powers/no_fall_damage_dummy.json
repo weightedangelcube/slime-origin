@@ -1,0 +1,8 @@
+{
+    "type": "origins:invulnerability",
+    "hidden": true,
+    "damage_condition": {
+        "type": "in_tag",
+        "tag": "minecraft:is_fall"
+    }
+}

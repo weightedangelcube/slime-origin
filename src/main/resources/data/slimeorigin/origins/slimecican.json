@@ -1,6 +1,12 @@
 {
     "powers": [
-        "slimeorigin:bounciness"
+        "slimeorigin:better_jump",
+        "slimeorigin:bounciness",
+        "slimeorigin:melting",
+        "slimeorigin:no_fall_damage_dummy",
+        "slimeorigin:slow_movement_dummy",
+        "slimeorigin:fragmentation",
+        "slimeorigin:slime_skin"
     ],
     "icon": {
         "id": "minecraft:slime_ball"

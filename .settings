@@ -2,6 +2,7 @@
 tab_size = 4
 ; enter your editor preferences here...
 wrap = false
+spellcheck = false
 
 [ide]
 ; enter your ide preferences here...

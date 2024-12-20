@@ -3,7 +3,9 @@
 	"package": "dev.angelcube.slimeorigin.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"BlockMixin"
+		"BlockMixin",
+        "SlimeBlockMixin",
+        "LivingEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,3 +1,4 @@
 {
-    "type": "slimeorigin:bounciness"
+    "type": "slimeorigin:bounciness",
+    "bounce_multiplier": 0.8
 }

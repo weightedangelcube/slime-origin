@@ -60,7 +60,7 @@ repositories {
 	 	url "https://masa.dy.fi/maven"
 	}
 
-    // Backup, in case some things don't want to exist
+    // Pehkui and backup for most other mods
     maven {
         url "https://jitpack.io/"
     }
