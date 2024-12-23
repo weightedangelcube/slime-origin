@@ -1,0 +1,19 @@
+{
+    "origin.slimeorigin.slimecican.name": "Slimecican",
+    "origin.slimeorigin.slimecican.description": "Part Human, part Slime. Very unpleasant to touch.",
+
+    "power.slimeorigin.bounciness.name": "Bounciness",
+    "power.slimeorigin.bounciness.description": "You bounce on any block as if it were a Slime block.",
+
+    "power.slimeorigin.better_jump.name": "Better Jump",
+    "power.slimeorigin.better_jump.description": "Your slime heritage gives you an improved leap at the cost of a reduced movement speed.",
+
+    "power.slimeorigin.fragmentation.name": "Fragmentation",
+    "power.slimeorigin.fragmentation.description": "When others would die, twice per life, you will shrink to half your size.",
+
+    "power.slimeorigin.melting.name": "Melting",
+    "power.slimeorigin.melting.description": "Slime doesn't last very long in hot weather; you will burn when exposed to the sun in hot biomes.",
+
+    "power.slimeorigin.slime_skin.name": "Slime Skin",
+    "power.slimeorigin.slime_skin.description": "You have the green, translucent skin of a Slime."
+}

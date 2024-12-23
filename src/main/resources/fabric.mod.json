@@ -1,28 +1,42 @@
 {
-  "schemaVersion": 1,
-  "id": "slimeorigin",
-  "version": "4.0.0",
-  "name": "Slimeorigin",
-  "description": "",
-  "authors": [],
-  "contact": {},
-  "license": "MIT",
-  "icon": "assets/slimeorigin/icon128.png",
-  "environment": "*",
-  "entrypoints": {
-    "client": [
-      "dev.jacksibley.slimeorigin.client.SlimeoriginClient"
-    ],
-    "main": [
-      "dev.jacksibley.slimeorigin.Slimeorigin"
-    ]
-  },
-  "mixins": [
-    "slimeorigin.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.11.1",
-    "fabric": "*",
-    "minecraft": "1.17.x"
-  }
+	"schemaVersion": 1,
+	"id": "slimeorigin",
+	"version": "${version}",
+	"name": "Slime Origin",
+	"description": "Adds a Slime Origin to the Origins mod. Based on Jack Sibley's mod of the same name.",
+	"authors": [
+		"Angel Wang (angelcube)"
+	],
+	"contact": {
+		"issues": "https://github.com/weightedangelcube/slime-origin/issues",
+		"sources": "https://github.com/weightedangelcube/slime-origin"
+	},
+	"license": "GPL-3.0-only",
+	"icon": "assets/slimeorigin/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.angelcube.slimeorigin.Slimeorigin"
+		],
+		"client": [
+			"dev.angelcube.slimeorigin.SlimeoriginClient"
+		]
+	},
+	"mixins": [
+		"slimeorigin.mixins.json",
+		{
+			"config": "slimeorigin.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"origins": ">=1.13.0-alpha.10"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
 }

@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "slow_movement_dummy",
+        "attribute": "minecraft:generic.movement_speed",
+        "amount": -0.25,
+        "operation": "add_multiplied_total"
+    },
+    "hidden": true
+}

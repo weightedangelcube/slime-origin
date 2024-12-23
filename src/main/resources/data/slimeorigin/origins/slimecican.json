@@ -1,17 +1,16 @@
 {
-  "powers": [
-    "slimeorigin:bouncy",
-    "slimeorigin:no_fall_damage_dummy",
-    "slimeorigin:better_jump",
-    "slimeorigin:better_jump_dummy",
-    "slimeorigin:fragmentation",
-    "slimeorigin:slime_skin",
-    "slimeorigin:melting"
-
-  ],
-  "icon": "minecraft:slime_ball",
-  "order": 100,
-  "impact": 2,
-  "name": "Slimecican",
-  "description": "Part Human, Part Slime. Very unpleasant to touch."
+    "powers": [
+        "slimeorigin:better_jump",
+        "slimeorigin:bounciness",
+        "slimeorigin:melting",
+        "slimeorigin:no_fall_damage_dummy",
+        "slimeorigin:slow_movement_dummy",
+        "slimeorigin:fragmentation",
+        "slimeorigin:slime_skin"
+    ],
+    "icon": {
+        "id": "minecraft:slime_ball"
+    },
+    "order": 100,
+    "impact": 2
 }
