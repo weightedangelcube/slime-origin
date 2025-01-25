@@ -3,7 +3,7 @@ plugins {
 	id 'maven-publish'
 }
 
-version = project.mod_version
+version = "${project.mod_version}+mc.${project.minecraft_version}"
 group = project.maven_group
 
 base {
@@ -40,7 +40,7 @@ repositories {
         url 'https://maven.ladysnake.org/releases'
     }
 
-    // Ladysnake: where Apoli lives
+    // Ladysnake Snapshots
     maven {
         url 'https://maven.ladysnake.org/snapshots'
     }
@@ -59,11 +59,6 @@ repositories {
 	maven {
 	 	url "https://masa.dy.fi/maven"
 	}
-
-    // Pehkui and backup for most other mods
-    maven {
-        url "https://jitpack.io/"
-    }
 }
 
 loom {
