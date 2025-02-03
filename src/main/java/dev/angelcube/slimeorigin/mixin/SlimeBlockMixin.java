@@ -1,16 +1,11 @@
 package dev.angelcube.slimeorigin.mixin;
 
 import dev.angelcube.slimeorigin.power.type.BouncinessPowerType;
-
 import io.github.apace100.apoli.component.PowerHolderComponent;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.SlimeBlock;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Vec3d;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

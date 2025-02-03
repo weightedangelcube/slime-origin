@@ -1,16 +1,8 @@
 package dev.angelcube.slimeorigin;
 
 import dev.angelcube.slimeorigin.power.type.SlimePowerTypes;
-
 import net.fabricmc.api.ModInitializer;
-
-import net.minecraft.entity.attribute.ClampedEntityAttribute;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

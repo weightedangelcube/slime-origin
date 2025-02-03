@@ -23,11 +23,7 @@
 		]
 	},
 	"mixins": [
-		"slimeorigin.mixins.json",
-		{
-			"config": "slimeorigin.client.mixins.json",
-			"environment": "client"
-		}
+		"slimeorigin.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",

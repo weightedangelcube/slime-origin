@@ -2,11 +2,8 @@ package dev.angelcube.slimeorigin.mixin;
 
 import dev.angelcube.slimeorigin.Slimeorigin;
 import dev.angelcube.slimeorigin.power.type.FragmentationPowerType;
-
 import io.github.apace100.apoli.component.PowerHolderComponent;
-
 import java.util.Set;
-
 import net.minecraft.entity.attribute.*;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.Entity;
@@ -16,12 +13,9 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
-
 import org.jetbrains.annotations.Nullable;
-
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -50,11 +44,6 @@ public abstract class LivingEntityMixin extends Entity {
     @Shadow public abstract void setHealth(float health);
     @Shadow public abstract boolean clearStatusEffects();
     @Shadow public abstract boolean addStatusEffect(StatusEffectInstance effect);
-
-    @Inject(method = "onDeath", at = @At("HEAD"), cancellable = true)
-    private void onDeath(DamageSource damageSource, CallbackInfo ci) {
-
-    }
 
     /**
      * Fragmentation code.

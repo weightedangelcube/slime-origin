@@ -1,13 +1,8 @@
 package dev.angelcube.slimeorigin.power.type;
 
 import dev.angelcube.slimeorigin.Slimeorigin;
-
 import io.github.apace100.apoli.power.PowerConfiguration;
-import io.github.apace100.apoli.power.type.PowerType;
 import io.github.apace100.apoli.power.type.PowerTypes;
-import io.github.apace100.apoli.registry.ApoliRegistries;
-
-import net.minecraft.registry.Registry;
 
 /**
  * This class registers all the PowerTypes we have to Apoli's registry.

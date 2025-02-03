@@ -5,7 +5,6 @@ import io.github.apace100.apoli.power.PowerConfiguration;
 import io.github.apace100.apoli.power.type.PowerType;
 import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataTypes;
-
 import org.jetbrains.annotations.NotNull;
 
 public class BouncinessPowerType extends PowerType {
