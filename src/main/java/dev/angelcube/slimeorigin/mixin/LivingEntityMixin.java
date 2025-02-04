@@ -13,7 +13,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -37,10 +37,11 @@ public abstract class LivingEntityMixin extends Entity {
         super(type, world);
     }
 
+    @Unique
     private int slimeSize = 0;
 
     // These are a couple of shadowed methods we retrieve from the original LivingEntity class.
-    @Shadow public abstract @Nullable EntityAttributeInstance getAttributeInstance(RegistryEntry<EntityAttribute> attribute);
+    @Shadow public abstract EntityAttributeInstance getAttributeInstance(RegistryEntry<EntityAttribute> attribute);
     @Shadow public abstract void setHealth(float health);
     @Shadow public abstract boolean clearStatusEffects();
     @Shadow public abstract boolean addStatusEffect(StatusEffectInstance effect);

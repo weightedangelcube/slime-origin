@@ -11,7 +11,7 @@ public class BouncinessPowerType extends PowerType {
     /**
      * The bounciness multiplier, or in other words, how bouncy the entity should be.
      */
-    private double bounceMultiplier;
+    private final double bounceMultiplier;
 
     /**
      * Constructs a new instance of the Bounciness PowerType.
@@ -24,8 +24,7 @@ public class BouncinessPowerType extends PowerType {
 
     /**
      * This data factory comes from Calio—it sniffs the slimeorigin:bounciness JSON file for a field called
-     * bounce_multiplier with a value of type double, and passes that into the class constructor. It's
-     * super cool!
+     * bounce_multiplier with a value of type double, and passes that into the class constructor.
      */
     public static final TypedDataObjectFactory<BouncinessPowerType> DATA_FACTORY = TypedDataObjectFactory.simple(
         new SerializableData()

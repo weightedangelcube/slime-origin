@@ -8,6 +8,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -20,6 +21,7 @@ import org.spongepowered.asm.mixin.Mixin;
  */
 @Mixin(Block.class)
 public class BlockMixin {
+    @Unique
     double bounceMultiplier;
     /**
      * Modifies all blocks to be bouncy such as the Slime block. 
