@@ -1,6 +1,8 @@
 # Slime Origin
 ![](https://img.shields.io/github/actions/workflow/status/weightedangelcube/slime-origin/build.yml)
 
+<img width="700" src="https://github.com/user-attachments/assets/316823c2-6ffe-40af-9205-914946303873" />
+
 Adds a Slime Origin to the Origins mod. Based on Jack Sibley's mod of the same name. Requries Fabric API, Origins >=1.13.0, Minecraft 1.21.1.
 
 # Building source
