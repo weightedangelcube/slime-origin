@@ -9,11 +9,11 @@ import org.slf4j.LoggerFactory;
 /**
  * The main entrypoint for the mod.
  */
-public class Slimeorigin implements ModInitializer {
+public class SlimeOrigin implements ModInitializer {
 	/**
 	 * Create a new String MOD_ID, for use in Loggers and Identifiers.
 	 */
-	public static final String MOD_ID = "slimeorigin";
+	public static final String MOD_ID = "slime-origin";
   
 	/**
 	 * Create a new LOGGER, to print information to the console.

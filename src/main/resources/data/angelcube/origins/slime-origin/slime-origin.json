@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "angelcube:slime-origin/better_jump",
+        "angelcube:slime-origin/bounciness",
+        "angelcube:slime-origin/melting",
+        "angelcube:slime-origin/no_fall_damage_dummy",
+        "angelcube:slime-origin/slow_movement_dummy",
+        "angelcube:slime-origin/fragmentation",
+        "angelcube:slime-origin/slime_skin"
+    ],
+    "icon": {
+        "id": "minecraft:slime_ball"
+    },
+    "order": 100,
+    "impact": 2
+}

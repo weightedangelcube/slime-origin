@@ -1,6 +1,6 @@
 package dev.angelcube.slimeorigin.mixin;
 
-import dev.angelcube.slimeorigin.Slimeorigin;
+import dev.angelcube.slimeorigin.SlimeOrigin;
 import dev.angelcube.slimeorigin.power.type.FragmentationPowerType;
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import java.util.Set;
@@ -67,8 +67,8 @@ public abstract class LivingEntityMixin extends Entity {
     private void tryUseTotem(DamageSource source, CallbackInfoReturnable<Boolean> cir) {
         slimeSize++;
         if (PowerHolderComponent.hasPowerType(this, FragmentationPowerType.class) && slimeSize >= 1 && slimeSize < 3) {
-            EntityAttributeModifier slimeScaleModifier = new EntityAttributeModifier(Slimeorigin.identifier(String.format("fragmentation_scale_%d", slimeSize)), -0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
-            EntityAttributeModifier slimeMaxHealthModifier = new EntityAttributeModifier(Slimeorigin.identifier(String.format("fragmentation_max_health_%d", slimeSize)), -0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+            EntityAttributeModifier slimeScaleModifier = new EntityAttributeModifier(SlimeOrigin.identifier(String.format("fragmentation_scale_%d", slimeSize)), -0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+            EntityAttributeModifier slimeMaxHealthModifier = new EntityAttributeModifier(SlimeOrigin.identifier(String.format("fragmentation_max_health_%d", slimeSize)), -0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
             this.getAttributeInstance(EntityAttributes.GENERIC_SCALE).addPersistentModifier(slimeScaleModifier);
             this.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).addPersistentModifier(slimeMaxHealthModifier);
 

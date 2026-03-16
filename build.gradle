@@ -65,7 +65,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"slimeorigin" {
+		"slime-origin" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

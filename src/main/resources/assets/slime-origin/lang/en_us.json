@@ -1,0 +1,19 @@
+{
+    "origin.angelcube.slime-origin.slime-origin.name": "Slime",
+    "origin.angelcube.slime-origin.slime-origin.description": "Part Human, part Slime. Very unpleasant to touch.",
+
+    "power.angelcube.slime-origin.bounciness.name": "Bounciness",
+    "power.angelcube.slime-origin.bounciness.description": "You bounce on any block as if it were a Slime block.",
+
+    "power.angelcube.slime-origin.better_jump.name": "Better Jump",
+    "power.angelcube.slime-origin.better_jump.description": "Your slime heritage gives you an improved leap at the cost of a reduced movement speed.",
+
+    "power.angelcube.slime-origin.fragmentation.name": "Fragmentation",
+    "power.angelcube.slime-origin.fragmentation.description": "When others would die, twice per life, you will shrink to half your size.",
+
+    "power.angelcube.slime-origin.melting.name": "Melting",
+    "power.angelcube.slime-origin.melting.description": "Slime doesn't last very long in hot weather; you will burn when exposed to the sun in hot biomes.",
+
+    "power.angelcube.slime-origin.slime_skin.name": "Slime Skin",
+    "power.angelcube.slime-origin.slime_skin.description": "You have the green, translucent skin of a Slime."
+}
