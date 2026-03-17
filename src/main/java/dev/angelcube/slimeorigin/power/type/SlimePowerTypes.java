@@ -14,12 +14,17 @@ public class SlimePowerTypes {
      * registry.
      */
     public static final PowerConfiguration<BouncinessPowerType> BOUNCINESS = PowerTypes.register(
-        PowerConfiguration.of(Identifier.of("angelcube","slime-origin/bounciness"), BouncinessPowerType.DATA_FACTORY)
+        PowerConfiguration.of(
+                Identifier.of("angelcube","slime-origin/bounciness"),
+                BouncinessPowerType.DATA_FACTORY
+        )
     );
 
-
     public static final PowerConfiguration<FragmentationPowerType> FRAGMENTATION = PowerTypes.register(
-        PowerConfiguration.simple(Identifier.of("angelcube","slime-origin/fragmentation"), FragmentationPowerType::new)
+        PowerConfiguration.simple(
+                Identifier.of("angelcube","slime-origin/fragmentation"),
+                FragmentationPowerType::new
+        )
     );
 
 
@@ -27,8 +32,6 @@ public class SlimePowerTypes {
      * Registers all the PowerTypes defined in this class. Apoli does this for us, so we can just
      * leave this method blank.
      */
-    public static void register() {
-
-    }
+    public static void register() { }
 
 }

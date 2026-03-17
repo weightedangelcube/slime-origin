@@ -6,20 +6,23 @@ import io.github.apace100.apoli.power.type.PowerType;
 import io.github.apace100.calio.data.SerializableData;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import org.jetbrains.annotations.NotNull;
+import java.util.Optional;
 
 public class BouncinessPowerType extends PowerType {
     /**
      * The bounciness multiplier, or in other words, how bouncy the entity should be.
      */
     private final double bounceMultiplier;
+    private final double minBounceHeight;
 
     /**
      * Constructs a new instance of the Bounciness PowerType.
      * 
      * @param bounceMultiplier The bounciness multiplier.
      */
-    public BouncinessPowerType(double bounceMultiplier) {
+    public BouncinessPowerType(double bounceMultiplier, double minBounceHeight) {
         this.bounceMultiplier = bounceMultiplier;
+        this.minBounceHeight = minBounceHeight;
     }
 
     /**
@@ -28,12 +31,15 @@ public class BouncinessPowerType extends PowerType {
      */
     public static final TypedDataObjectFactory<BouncinessPowerType> DATA_FACTORY = TypedDataObjectFactory.simple(
         new SerializableData()
-            .add("bounce_multiplier", SerializableDataTypes.DOUBLE),
+            .add("bounce_multiplier", SerializableDataTypes.DOUBLE)
+            .add("min_bounce_height", SerializableDataTypes.DOUBLE, 0.1),
         data -> new BouncinessPowerType(
-            data.get("bounce_multiplier")
+            data.get("bounce_multiplier"),
+            data.get("min_bounce_height")
         ),
         (powerType, serializableData) -> serializableData.instance()
             .set("bounce_multiplier", powerType.bounceMultiplier)
+            .set("min_bounce_height", powerType.minBounceHeight)
         );
 
     /**
@@ -43,6 +49,10 @@ public class BouncinessPowerType extends PowerType {
      */
     public double getBounceMultiplier() {
         return bounceMultiplier;
+    }
+
+    public double getMinBounceHeight() {
+        return minBounceHeight;
     }
 
     /**
